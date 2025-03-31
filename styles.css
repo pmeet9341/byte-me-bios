@@ -66,6 +66,7 @@ header nav button:hover {
 
 h2 {
     margin: 0 0 10px;
+    font-weight: bolder;
 }
 
 /* Initially hide bio details */
@@ -74,6 +75,43 @@ h2 {
     margin-top: 10px;
     color: #555;
 }
+
+/* ----------------------------- */
+/* Duber's Custom Styling       */
+/* ----------------------------- */
+
+/* Avatar */
+.bio-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+/* Moodboard */
+.dubermoodboard {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.dubermoodboard h4 {
+    margin-bottom: 10px;
+    color: darkcyan;
+    font-size: 16px;
+}
+
+.duber-mood-img {
+    width: 40px;
+    margin: 5px;
+    transition: transform 0.2s ease;
+}
+
+.duber-mood-img:hover {
+    transform: scale(1.1);
+}
+
 
 /* Button styling */
 button {
