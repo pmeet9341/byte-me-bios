@@ -66,6 +66,7 @@ header nav button:hover {
 
 h2 {
     margin: 0 0 10px;
+    font-weight: bolder;
 }
 
 /* Initially hide bio details */
@@ -74,6 +75,62 @@ h2 {
     margin-top: 10px;
     color: #555;
 }
+
+/* Duber's Bio Card */
+
+.card:nth-of-type(3) {
+    background: darkslategrey;
+    color: lightcyan;
+    border-left: 4px solid #00ffff;
+    font-family: 'Courier New', monospace;
+    box-shadow: 0 0 12px #00ffff44;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:nth-of-type(3):hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 18px #00ffff88;
+}
+
+#bio3 {
+    color: #00ff88;
+    font-family: 'Courier New', monospace;
+    background-color: #0f0f0f;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.bio-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    display: block;
+}
+
+.dubermoodboard {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.dubermoodboard h4 {
+    margin-bottom: 10px;
+    color: lightcyan;
+    font-size: 16px;
+}
+
+.duber-mood-img {
+    width: 40px;
+    margin: 5px;
+    transition: transform 0.2s ease;
+}
+
+.duber-mood-img:hover {
+    transform: scale(1.1);
+}
+
 
 /* Button styling */
 button {
