@@ -16,7 +16,7 @@ header {
 
 /* Styling for team logo image */
 .team-logo {
-    width: 150px; /* Adjust the size as needed */
+    width: 150px;
     margin-top: 10px;
 }
 
@@ -48,7 +48,7 @@ header nav button:hover {
     justify-content: space-between;
 }
 
-/* Card styling for individual team bios */
+/* Base Card Styling */
 .card {
     background: white;
     border-radius: 8px;
@@ -64,19 +64,55 @@ header nav button:hover {
     transform: scale(1.05);
 }
 
+/* Headings */
 h2 {
     margin: 0 0 10px;
     font-weight: bolder;
 }
 
-/* Initially hide bio details */
+/* Hidden Bio Sections */
 .bio {
     display: none;
     margin-top: 10px;
     color: #555;
 }
 
-/* Duber's Bio Card */
+/* Meet Patel's Stylish Brown Card */
+.card.meet {
+    background: #4b2e2e; /* Brown background */
+    color: #f8e9d2;      /* Light tan text */
+    border: 2px solid #00f7ff;
+    font-family: 'Outfit', sans-serif;
+    box-shadow: 0 0 16px #00f7ff55;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card.meet:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 0 25px #00f7ffcc;
+}
+
+.card.meet a {
+    color: #00f7ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card.meet a:hover {
+    text-decoration: underline;
+}
+
+/* Meet Patel's Hacker-Style Bio */
+#bio1 {
+    color: #00ff88;
+    font-family: 'Courier New', monospace;
+    background-color: #0f0f0f;
+    padding: 8px;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+/* Duber’s Custom Card */
 .card:nth-of-type(3) {
     background: darkslategrey;
     color: lightcyan;
@@ -100,6 +136,7 @@ h2 {
     margin-top: 10px;
 }
 
+/* Avatar Image Styling */
 .bio-avatar {
     width: 100px;
     height: 100px;
@@ -109,6 +146,7 @@ h2 {
     display: block;
 }
 
+/* Moodboard Icons for Duber */
 .dubermoodboard {
     margin-top: 15px;
     text-align: center;
@@ -130,7 +168,7 @@ h2 {
     transform: scale(1.1);
 }
 
-/* Button styling */
+/* Button Styling */
 button {
     background: #007BFF;
     color: white;
@@ -142,34 +180,4 @@ button {
 
 button:hover {
     background: #0056b3;
-}
-
-/* --------------------------------------------------------------
-   New Styling for Meet Patel's Card
-   (This styling will only apply to cards with the "meet" class)
----------------------------------------------------------------- */
-
-/* Make Meet Patel's card stylish with a dark theme and neon accents */
-.card.meet {
-    background: #1f1f1f;            /* Dark background */
-    color: #f0f0f0;                /* Light text for contrast */
-    border: 2px solid #00f7ff;       /* Neon border */
-    font-family: 'Outfit', sans-serif; /* Use a modern font (ensure font link is in index.html) */
-    box-shadow: 0 0 16px #00f7ff55;  /* Neon glow effect */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card.meet:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 0 25px #00f7ffcc;
-}
-
-/* Optionally, style the bio section within Meet Patel's card (if using an ID like #bio1) */
-#bio1 {
-    color: #00ff88;
-    font-family: 'Courier New', monospace;
-    background-color: #0f0f0f;
-    padding: 8px;
-    border-radius: 4px;
-    margin-top: 10px;
 }
