@@ -1,66 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Team Bio</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Team Bio</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
 
 <header>
-    <h1>Meet Our Team</h1>
-    <!-- Example team logo -->
-    <img src="img/Logo-ByteMe.png" alt="Team Logo" class="team-logo">
+  <h1>Meet Our Team</h1>
+  <img src="img/Logo-ByteMe.png" alt="Team Logo" class="team-logo">
 
-    <!-- Navigation menu to switch between sections -->
-    <nav>
-        <button onclick="showSection('bios')">Team Bios</button>
-        <button onclick="showSection('vision')">Team Vision</button>
-    </nav>
+  <nav>
+    <button onclick="showSection('bios')">Team Bios</button>
+    <button onclick="showSection('vision')">Team Vision</button>
+  </nav>
 </header>
 
 <!-- Team bios section (default section) -->
 <div id="bios" class="container">
-    <!-- Each card represents an individual team member -->
-    <div class="card meet">
-        <img src="img/meet.jpg" alt="Meet Patel" width="120" height="120" style="border-radius: 50%; margin-bottom: 10px;" />
-        <h2>Meet Patel</h2>
-        <p>AI & Robotics Developer</p>
-        <button onclick="toggleBio('bio1')">Show Bio</button>
-        <p id="bio1" class="bio">Meet is a passionate developer focused on AI, robotics, and game design. He enjoys building smart systems and creative digital experiences.
-    Outside of tech, he plays volleyball, rides horses, hikes, and practices archery.
-    Check out his work on <a href="https://github.com/pmeet9341" target="_blank">GitHub</a>.</p>
-    </div>
-    <div class="card">
-        <h2>Jane Smith</h2>
-        <p>Backend Developer</p>
-        <button onclick="toggleBio('bio2')">Show Bio</button>
-        <p id="bio2" class="bio">Jane is a backend developer specializing in server-side logic and database management.</p>
-    </div>
-    <div class="card">
-        <h2>Duber Moreira Maestre</h2>
-        <img src="img/Duber-Avatar.jpg" alt="Duber's Avatar" class="bio-avatar">
-        <p>Security Analyst</p>
-        <button onclick="toggleBio('bio3')">Show Bio</button>
-        <p id="bio3" class="bio">Duber is a security analyst focused on protecting systems, networks, and applications. NANO >>> VIM.</p>
 
-        <div class="dubermoodboard">
-            <h4>Where You’ll Find Me</h4>
-            <a href="https://github.com/dubermm21" target="_blank">
-                <img src="img/Logo-Github.png" alt="GitHub" class="duber-mood-img">
-            </a>
-            <a href="https://linkedin.com/in/duber-moreira-maestre" target="_blank">
-                <img src="img/Logo-Linkedin.png" alt="LinkedIn" class="duber-mood-img">
-            </a>
-        </div>
+  <!-- Meet Patel Card -->
+  <div class="card meet">
+    <img src="img/meet.jpg" alt="Meet Patel" class="bio-avatar">
+    <h2>Meet Patel</h2>
+    <p>AI & Robotics Developer</p>
+    <button onclick="toggleBio('bio1')">Show Bio</button>
+    <p id="bio1" class="bio">
+      Meet is a passionate developer focused on AI, robotics, and game design.
+      He enjoys building smart systems and creative digital experiences.
+      Outside of tech, he plays volleyball, rides horses, hikes, and practices archery.
+      Check out his work on
+      <a href="https://github.com/pmeet9341" target="_blank">GitHub</a>.
+    </p>
+
+    <div class="meetmoodboard">
+      <h4>Where You’ll Find Me</h4>
+      <a href="https://github.com/pmeet9341" target="_blank">
+        <img src="img/Logo-Github.png" alt="GitHub" class="meet-mood-img">
+      </a>
+      <a href="https://www.linkedin.com/in/meet-patel-3486a22b6/" target="_blank">
+        <img src="img/Logo-Linkedin.png" alt="LinkedIn" class="meet-mood-img">
+      </a>
     </div>
+  </div>
+
+  <!-- Jane Smith Card -->
+  <div class="card">
+    <h2>Jane Smith</h2>
+    <p>Backend Developer</p>
+    <button onclick="toggleBio('bio2')">Show Bio</button>
+    <p id="bio2" class="bio">
+      Jane is a backend developer specializing in server-side logic and database management.
+    </p>
+  </div>
+
+  <!-- Duber Moreira Maestre Card -->
+  <div class="card">
+    <h2>Duber Moreira Maestre</h2>
+    <img src="img/Duber-Avatar.jpg" alt="Duber's Avatar" class="bio-avatar">
+    <p>Security Analyst</p>
+    <button onclick="toggleBio('bio3')">Show Bio</button>
+    <p id="bio3" class="bio">
+      Duber is a security analyst focused on protecting systems, networks, and applications. NANO >>> VIM.
+    </p>
+
+    <div class="dubermoodboard">
+      <h4>Where You’ll Find Me</h4>
+      <a href="https://github.com/dubermm21" target="_blank">
+        <img src="img/Logo-Github.png" alt="GitHub" class="duber-mood-img">
+      </a>
+      <a href="https://linkedin.com/in/duber-moreira-maestre" target="_blank">
+        <img src="img/Logo-Linkedin.png" alt="LinkedIn" class="duber-mood-img">
+      </a>
+    </div>
+  </div>
+
 </div>
 
 <!-- Team vision/mission statement section (hidden by default) -->
 <div id="vision" class="container" style="display: none;">
-    <h2>Our Mission Statement</h2>
-    <p>We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions that meet and exceed our clients' expectations.</p>
+  <h2>Our Mission Statement</h2>
+  <p>
+    We strive to create a collaborative, inclusive, and innovative environment where team members feel empowered
+    to push boundaries and achieve excellence in their craft. Our mission is to deliver high-quality solutions
+    that meet and exceed our clients' expectations.
+  </p>
 </div>
 
 <script src="script.js"></script> <!-- Link to external JavaScript file -->

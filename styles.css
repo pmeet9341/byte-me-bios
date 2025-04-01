@@ -48,7 +48,7 @@ header nav button:hover {
     justify-content: space-between;
 }
 
-/* Base Card Styling */
+/* Base card style */
 .card {
     background: white;
     border-radius: 8px;
@@ -64,45 +64,35 @@ header nav button:hover {
     transform: scale(1.05);
 }
 
-/* Headings */
 h2 {
     margin: 0 0 10px;
     font-weight: bolder;
 }
 
-/* Hidden Bio Sections */
+/* Hide bio initially */
 .bio {
     display: none;
     margin-top: 10px;
     color: #555;
 }
 
-/* Meet Patel's Stylish Brown Card */
+/* ---------------------------
+   Meet Patel's Custom Styling
+---------------------------- */
 .card.meet {
-    background: #4b2e2e; /* Brown background */
-    color: #f8e9d2;      /* Light tan text */
-    border: 2px solid #00f7ff;
-    font-family: 'Outfit', sans-serif;
-    box-shadow: 0 0 16px #00f7ff55;
+    background: #4b2e2e;
+    color: lightcyan;
+    border-left: 4px solid #00ffff;
+    font-family: 'Courier New', monospace;
+    box-shadow: 0 0 12px #00ffff44;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card.meet:hover {
-    transform: translateY(-6px);
-    box-shadow: 0 0 25px #00f7ffcc;
+    transform: scale(1.03);
+    box-shadow: 0 0 18px #00ffff88;
 }
 
-.card.meet a {
-    color: #00f7ff;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.card.meet a:hover {
-    text-decoration: underline;
-}
-
-/* Meet Patel's Hacker-Style Bio */
 #bio1 {
     color: #00ff88;
     font-family: 'Courier New', monospace;
@@ -112,7 +102,30 @@ h2 {
     margin-top: 10px;
 }
 
-/* Duber’s Custom Card */
+.meetmoodboard {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.meetmoodboard h4 {
+    margin-bottom: 10px;
+    color: lightcyan;
+    font-size: 16px;
+}
+
+.meet-mood-img {
+    width: 40px;
+    margin: 5px;
+    transition: transform 0.2s ease;
+}
+
+.meet-mood-img:hover {
+    transform: scale(1.1);
+}
+
+/* ----------------------------
+   Duber's Custom Card Styling
+---------------------------- */
 .card:nth-of-type(3) {
     background: darkslategrey;
     color: lightcyan;
@@ -136,17 +149,6 @@ h2 {
     margin-top: 10px;
 }
 
-/* Avatar Image Styling */
-.bio-avatar {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin: 0 auto 15px;
-    display: block;
-}
-
-/* Moodboard Icons for Duber */
 .dubermoodboard {
     margin-top: 15px;
     text-align: center;
@@ -166,6 +168,16 @@ h2 {
 
 .duber-mood-img:hover {
     transform: scale(1.1);
+}
+
+/* Bio avatars */
+.bio-avatar {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 0 auto 15px;
+    display: block;
 }
 
 /* Button Styling */
