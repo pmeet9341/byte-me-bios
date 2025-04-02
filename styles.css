@@ -82,12 +82,18 @@ h2 {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
+.card.shewit {
+  background: #ba4242;
+  
+
+}
+
 .card.meet:hover {
   transform: scale(1.03);
   box-shadow: 0 0 18px #00ffff88;
 }
 
-#bio1 {
+#bio1, #bio4 {
   color: #00ff88;
   font-family: 'Courier New', monospace;
   background-color: #0f0f0f;
@@ -97,6 +103,11 @@ h2 {
 }
 
 .meetmoodboard {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.shewitmoodboard{
   margin-top: 15px;
   text-align: center;
 }
