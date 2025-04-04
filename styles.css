@@ -222,17 +222,20 @@ button:hover {
 
 /* Mission Section */
 .mission-section {
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
 
 .mission-card {
+  margin: auto;
   background-color: #1f1f1f;
   color: #f0f0f0;
   border-radius: 10px;
   padding: 30px;
   max-width: 900px;
   box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
-  font-family: 'Outfit', sans-serif;
+  font-family: "GB18030 Bitmap", 'Outfit', sans-serif;
   line-height: 1.6;
   text-align: center;
 }
