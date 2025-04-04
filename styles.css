@@ -128,6 +128,29 @@ h2 {
   transform: scale(1.1);
 }
 
+.card:nth-of-type(2) {
+  background: orange;
+  color: black;
+  border-left: 4px solid darkslateblue;
+  font-family: 'Courier New', monospace;
+  box-shadow: 0 0 12px #4a4379;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:nth-of-type(2):hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 18px blueviolet;
+}
+
+#bio2 {
+  color: rebeccapurple;
+  font-family: "Kannada Sangam MN";
+  background-color: papayawhip;
+  padding: 8px;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
 /* Duber Card Style */
 .card:nth-of-type(3) {
   background: darkslategrey;
